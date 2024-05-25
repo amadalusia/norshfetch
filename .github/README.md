@@ -11,8 +11,8 @@
 check if your `$PATH` includes `/usr/local/bin`
 
 ```shell
-% chmod +x norshfetch.sh
-% sudo mv norshfetch.sh /usr/local/bin/norshfetch
+% chmod +x norshfetch
+% sudo mv norshfetch /usr/local/bin
 ```
 
 >[!IMPORTANT]
