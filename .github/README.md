@@ -4,6 +4,8 @@
   <img src="./images/motivation.png">
 </div>
 
+---
+
 ### installing
 
 check if your `$PATH` includes `/usr/local/bin`
