@@ -1,10 +1,10 @@
-<center>
+<div align="center">
   <h3>norshfetch</h3>
   <h6>norfetch, but rewritten in bash!</h6>
   <img src="./images/motivation.png">
-</center>
+</div>
 
-# installing
+### installing
 
 check if your `$PATH` includes `/usr/local/bin`
 
