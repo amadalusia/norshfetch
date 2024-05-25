@@ -1,5 +1,5 @@
 {
-  outputs = inputs@{self, flake-parts, ...}
+  outputs = inputs@{self, flake-parts, ...}:
     flake-parts.lib.mkFlake {
       perSystem = {pkgs, config, ...}: {
         packages = {
