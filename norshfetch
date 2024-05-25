@@ -7,10 +7,10 @@ WHITE="\e[37m"
 NC='\e[0m'
 
 NAME="$(whoami)@$(uname -n)"
-OS=$(awk -F= '$1 == "NAME" {gsub(/"/, "", $2); print $2}' /etc/os-release)
-KERNEL=$(uname -r)
-SYSTEM=$(cat /sys/devices/virtual/dmi/id/product_name)
-SHELL=$(basename $SHELL)
+OS="$(awk -F= '$1 == "NAME" {gsub(/"/, "", $2); print $2}' /etc/os-release)"
+KERNEL="$(uname -r)"
+SYSTEM="$(cat /sys/devices/virtual/dmi/id/product_name)"
+SHELL="$(basename "$SHELL")"
 UPTIME="$(uptime | awk '{print $3}' | sed 's/,//')"
 MEMORY="$(free -m | awk 'NR==2{print $3 "M / " $2 "M"}')"
 
