@@ -16,13 +16,13 @@ MEMORY="$(free -m | awk 'NR==2{print $3 "M / " $2 "M"}')"
 
 print_info() {
     echo -ne "\n"
-    echo -ne "$1████$2██$3███$2██$1████████████$NC | $NAME\n"
-    echo -ne "$1████$2██$3███$2██$1████████████$NC | OS:   $OS\n"
-    echo -ne "$2██████$3███$2██████████████$NC | KRNL: $KERNEL\n"
-    echo -ne "$3███████████████████████$NC | SYS:  $SYSTEM\n"
-    echo -ne "$2██████$3███$2██████████████$NC | SH:   $SHELL\n"
-    echo -ne "$1████$2██$3███$2██$1████████████$NC | UP:   $UPTIME\n"
-    echo -ne "$1████$2██$3███$2██$1████████████$NC | MEM:  $MEMORY\n"
+    echo -ne "$1████$2██$3███$2██$1████████████$NC $NAME\n"
+    echo -ne "$1████$2██$3███$2██$1████████████$NC os   $OS\n"
+    echo -ne "$2██████$3███$2██████████████$NC krnl $KERNEL\n"
+    echo -ne "$3███████████████████████$NC sys  $SYSTEM\n"
+    echo -ne "$2██████$3███$2██████████████$NC sh   $SHELL\n"
+    echo -ne "$1████$2██$3███$2██$1████████████$NC up   $UPTIME\n"
+    echo -ne "$1████$2██$3███$2██$1████████████$NC mem  $MEMORY\n"
     echo -ne "\n"
 }
 
