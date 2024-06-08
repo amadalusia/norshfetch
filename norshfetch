@@ -7,7 +7,7 @@ WHITE="\e[37m"
 NC='\e[0m'
 
 NAME="$(whoami)@$(uname -n)"
-OS="$(awk -F= '$1 == "NAME" {gsub(/"/, "", $2); print $2}' /etc/os-release)"
+OS="$(awk -F= '$1 == "PRETTY_NAME" {gsub(/"/, "", $2); print $2}' /etc/os-release)"
 KERNEL="$(uname -m -r -s)"
 SYSTEM="$(cat /sys/devices/virtual/dmi/id/product_name)"
 SHELL="$(basename "$SHELL")"
