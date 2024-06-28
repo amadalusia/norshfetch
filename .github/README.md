@@ -1,3 +1,7 @@
+This tool was made while `balkenix` was still my identity.
+
+---
+
 <div align="center">
   <h3>norshfetch</h3>
   <h6>norfetch, but rewritten in bash!</h6>
